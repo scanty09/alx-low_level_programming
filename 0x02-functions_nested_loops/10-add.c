@@ -1,67 +1,17 @@
 #include "main.h"
-#include <stdio.h>
-/**
- * main - check the code
- *
- * Return: Always 0.
- */
-int main(void)
-{
-	int n;
-
-
-	n = add(89, 9);
-	printf("%d\n", n);
-	return (0);
-}
-
-
-Question 11
-#include "main.h"
-
-
-#include <stdio.h>
-
 
 /**
- * print_to_98 - print a program to 98
- * @n: The number to start printing
- * Return: Always 0.
+ * add - adds two integers and returns the result
+ * @a: int to be added to b
+ * @b: int to be added to a
+ * Return: sum of a and b
  */
-
-
-void print_to_98(int n)
+int add(int a, int b)
 {
-	if (n <= 98)
-	{
-	for (; n <= 98; n++)
-	{
-	if (n == 98)
-	{
-	printf("%d", n);
-	printf("\n");
-	break;
-	}
-	else
-	{
-	printf("%d, ", n);
-	}
-	}
-	}
-	else
-	{
-	for (; n >= 98; n--)
-	{
-	if (n == 98)
-	{
-	printf("%d", n);
-	printf("\n");
-	break;
-	}
-	else
-	{
-		printf("%d, ", n);
-	}
-	}
-	}
+	int c;
+
+	c = a + b;
+
+	return (c);
 }
+
